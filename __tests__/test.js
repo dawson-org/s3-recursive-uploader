@@ -3,6 +3,8 @@ const test = require('ava');
 const uploader = require('../');
 const makeBucketKey = uploader.makeBucketKey;
 
+const BUCKET_NAME = process.env.BUCKET_NAME;
+
 test('makeBucketKey with a prefix', t => {
   const {bucket, key} = makeBucketKey(
     `${__dirname}/fixtures`,
@@ -28,7 +30,7 @@ test.cb('upload to bucket with prefix', t => {
 
   uploader({
     source: `${__dirname}/fixtures`,
-    destination: 'dawson-s3-recursive-uploader-example/assets/', // or 'mybucket'
+    destination: `${BUCKET_NAME}/assets/`, // or 'mybucket'
     ignoreHidden: true, // default, ignoring files starting with '.'
     ignore: [] // passed to https://github.com/jergason/recursive-readdir
   })
@@ -47,7 +49,7 @@ test.cb('upload to bucket without prefix', t => {
 
   uploader({
     source: `${__dirname}/fixtures`,
-    destination: 'dawson-s3-recursive-uploader-example', // or 'mybucket', no trailing /
+    destination: `${BUCKET_NAME}`, // or 'mybucket', no trailing /
     ignoreHidden: true, // default, ignoring files starting with '.'
     ignore: [] // passed to https://github.com/jergason/recursive-readdir
   })
