@@ -14,7 +14,7 @@ import uploader from 's3-recursive-uploader';
 
 uploader({
   source: `${__dirname}/public`,
-  destination: 'my-bucket/assets', // or 'mybucket', no trailing /
+  destination: 'my-bucket/assets/', // or 'mybucket' (trailing / is mandatory iff specifying a prefix)
   ignoreHidden: true, // default, ignoring files starting with '.'
   ignore: [] // passed to https://github.com/jergason/recursive-readdir
 })
