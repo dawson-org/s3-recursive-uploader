@@ -1,6 +1,7 @@
 const fs = require('fs');
 
 const AWS = require('aws-sdk');
+const mime = require('mime-types');
 const readdir = require('recursive-readdir');
 const async = require('async');
 const eachLimit = async.eachLimit;
@@ -23,7 +24,8 @@ const uploadFileFactory = (s3, root, destination) => (path, callback) => {
     {
       Bucket: bucket,
       Key: key,
-      Body: fs.createReadStream(path)
+      Body: fs.createReadStream(path),
+      ContentType: mime.lookup(path) || 'application/octet-stream'
     },
     err => {
       if (err) {
