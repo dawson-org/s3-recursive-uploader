@@ -1,6 +1,8 @@
 s3-recursive-uploader
 =====================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dawson-org/s3-recursive-uploader.svg)](https://greenkeeper.io/)
+
 recursively uploads files and directories to s3
 
 [![npm version](https://badge.fury.io/js/s3-recursive-uploader.svg)](https://badge.fury.io/js/s3-recursive-uploader) 
