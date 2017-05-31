@@ -18,14 +18,15 @@ const makeBucketKey = (root, destination, path) => {
   return { bucket, key };
 };
 
-const uploadFileFactory = (s3, root, destination) => (path, callback) => {
+const uploadFileFactory = (s3, root, destination, acl) => (path, callback) => {
   const { bucket, key } = makeBucketKey(root, destination, path);
   s3.upload(
     {
       Bucket: bucket,
       Key: key,
       Body: fs.createReadStream(path),
-      ContentType: mime.lookup(path) || 'application/octet-stream'
+      ContentType: mime.lookup(path) || 'application/octet-stream',
+      ACL: acl
     },
     err => {
       if (err) {
@@ -54,7 +55,7 @@ function upload (opts, callback) {
     ignoreList.push('.*');
   }
 
-  const s3 = new AWS.S3({params: {ACL: acl}});
+  const s3 = new AWS.S3({});
   const uploader = uploadFileFactory(s3, source, destination, acl);
 
   readdir(source, ignoreList, function (err, files) {
