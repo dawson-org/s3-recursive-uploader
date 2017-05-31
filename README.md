@@ -25,6 +25,10 @@ uploader({
 
 ```
 
+### Changelog
+
+[Releases](https://github.com/dawson-org/s3-recursive-uploader/releases)
+
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
