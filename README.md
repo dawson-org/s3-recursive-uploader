@@ -30,8 +30,8 @@ uploader({
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars0.githubusercontent.com/u/950086?v=3" width="100px;"/><br /><sub>Simone Lusenti</sub>](https://twitter.com/Lanzone31)<br />[💬](#question-lusentis "Answering Questions") [💻](https://github.com/dawson-org/s3-recursive-uploader/commits?author=lusentis "Code") [📖](https://github.com/dawson-org/s3-recursive-uploader/commits?author=lusentis "Documentation") [👀](#review-lusentis "Reviewed Pull Requests") [⚠️](https://github.com/dawson-org/s3-recursive-uploader/commits?author=lusentis "Tests") [🔧](#tool-lusentis "Tools") |
-| :---: |
+| [<img src="https://avatars0.githubusercontent.com/u/950086?v=3" width="100px;"/><br /><sub>Simone Lusenti</sub>](https://twitter.com/Lanzone31)<br />[💬](#question-lusentis "Answering Questions") [💻](https://github.com/dawson-org/s3-recursive-uploader/commits?author=lusentis "Code") [📖](https://github.com/dawson-org/s3-recursive-uploader/commits?author=lusentis "Documentation") [👀](#review-lusentis "Reviewed Pull Requests") [⚠️](https://github.com/dawson-org/s3-recursive-uploader/commits?author=lusentis "Tests") [🔧](#tool-lusentis "Tools") | [<img src="https://avatars3.githubusercontent.com/u/3817380?v=3" width="100px;"/><br /><sub>Vlad Holubiev</sub>](http://linkedin.com/in/vladgolubev)<br />[🐛](https://github.com/dawson-org/s3-recursive-uploader/issues?q=author%3Avladgolubev "Bug reports") [💻](https://github.com/dawson-org/s3-recursive-uploader/commits?author=vladgolubev "Code") [📖](https://github.com/dawson-org/s3-recursive-uploader/commits?author=vladgolubev "Documentation") [⚠️](https://github.com/dawson-org/s3-recursive-uploader/commits?author=vladgolubev "Tests") |
+| :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!

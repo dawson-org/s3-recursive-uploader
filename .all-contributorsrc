@@ -20,6 +20,18 @@
         "test",
         "tool"
       ]
+    },
+    {
+      "login": "vladgolubev",
+      "name": "Vlad Holubiev",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3817380?v=3",
+      "profile": "http://linkedin.com/in/vladgolubev",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "test"
+      ]
     }
   ]
 }
