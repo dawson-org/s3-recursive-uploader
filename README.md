@@ -24,3 +24,7 @@ uploader({
 .catch((err) => console.error('Error', err));
 
 ```
+
+### Changelog
+
+[Releases](https://github.com/dawson-org/s3-recursive-uploader/releases)
