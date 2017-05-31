@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "async": "^2.1.5",
-    "aws-sdk": "^2.22.0",
+    "aws-sdk": "^2.60.0",
     "mime-types": "^2.1.14",
     "recursive-readdir": "^2.1.1"
   },
@@ -20,7 +20,7 @@
     "node": ">=6"
   },
   "devDependencies": {
-    "ava": "^0.18.2",
+    "ava": "^0.19.0",
     "prettier-eslint-cli": "^4.0.0"
   }
 }

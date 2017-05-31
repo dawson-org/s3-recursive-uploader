@@ -18,14 +18,15 @@ const makeBucketKey = (root, destination, path) => {
   return { bucket, key };
 };
 
-const uploadFileFactory = (s3, root, destination) => (path, callback) => {
+const uploadFileFactory = (s3, root, destination, acl) => (path, callback) => {
   const { bucket, key } = makeBucketKey(root, destination, path);
   s3.upload(
     {
       Bucket: bucket,
       Key: key,
       Body: fs.createReadStream(path),
-      ContentType: mime.lookup(path) || 'application/octet-stream'
+      ContentType: mime.lookup(path) || 'application/octet-stream',
+      ACL: acl
     },
     err => {
       if (err) {
@@ -42,6 +43,7 @@ function upload (opts, callback) {
   const destination = opts.destination; // bucket[/prefix]
   const ignoreList = opts.ignore || [];
   const ignoreHidden = opts.ignoreHidden || true;
+  const acl = opts.acl || 'private';
 
   if (opts.source[0] !== '/') {
     return callback(
@@ -54,7 +56,7 @@ function upload (opts, callback) {
   }
 
   const s3 = new AWS.S3({});
-  const uploader = uploadFileFactory(s3, source, destination);
+  const uploader = uploadFileFactory(s3, source, destination, acl);
 
   readdir(source, ignoreList, function (err, files) {
     if (err) {
