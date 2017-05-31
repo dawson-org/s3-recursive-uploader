@@ -24,3 +24,14 @@ uploader({
 .catch((err) => console.error('Error', err));
 
 ```
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars0.githubusercontent.com/u/950086?v=3" width="100px;"/><br /><sub>Simone Lusenti</sub>](https://twitter.com/Lanzone31)<br />[💬](#question-lusentis "Answering Questions") [💻](https://github.com/dawson-org/s3-recursive-uploader/commits?author=lusentis "Code") [📖](https://github.com/dawson-org/s3-recursive-uploader/commits?author=lusentis "Documentation") [👀](#review-lusentis "Reviewed Pull Requests") [⚠️](https://github.com/dawson-org/s3-recursive-uploader/commits?author=lusentis "Tests") [🔧](#tool-lusentis "Tools") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!

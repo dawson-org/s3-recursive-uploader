@@ -1,0 +1,25 @@
+{
+  "projectName": "s3-recursive-uploader",
+  "projectOwner": "dawson-org",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "lusentis",
+      "name": "Simone Lusenti",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/950086?v=3",
+      "profile": "https://twitter.com/Lanzone31",
+      "contributions": [
+        "question",
+        "code",
+        "doc",
+        "review",
+        "test",
+        "tool"
+      ]
+    }
+  ]
+}
