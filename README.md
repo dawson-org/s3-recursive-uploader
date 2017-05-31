@@ -17,7 +17,8 @@ uploader({
   source: `${__dirname}/public`,
   destination: 'my-bucket/assets/', // or 'mybucket' (trailing / is mandatory iff specifying a prefix)
   ignoreHidden: true, // default, ignoring files starting with '.'
-  ignore: [] // passed to https://github.com/jergason/recursive-readdir
+  ignore: [], // passed to https://github.com/jergason/recursive-readdir
+  acl: 'public-read' // Access policy for files. Defaults to 'private'. Passed to aws-sdk
 })
 .then((stats) => console.log('all done:', stats.count))
 .catch((err) => console.error('Error', err));
